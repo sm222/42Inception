@@ -8,10 +8,11 @@ FROM debian:buster
 # https://fr.linux-console.net/?p=16412
 
 #https://baeldung.com/linux/nginx-docker-container <-- this one look good
+#https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-fr
 
 RUN apt-get -y update && apt-get -y install nginx
 
-COPY default /etc/nginx/sites-available/default
+COPY .config /etc/nginx/sites-available/default
 
 EXPOSE 80/tcp
 
