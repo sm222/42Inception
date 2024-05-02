@@ -1,3 +1,12 @@
 # help
 #
-#
+# https://kbremaud.fr/linux/installer-nginx-avec-docker-compose/
+
+version: '3.9'
+
+services:
+  nginx:
+    image: "nginx"
+    build: ./requirements/nginx
+    ports:
+      - 443:443
