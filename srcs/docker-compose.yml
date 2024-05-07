@@ -6,7 +6,6 @@
 
 services:
   nginx:
-    image: "nginx"
     build: ./requirements/nginx
     dockerfile: Dockerfile
 #  volume:
@@ -14,9 +13,11 @@ services:
     ports:
       - 443:443
     depends_on:
-      - worlpress
+      - wordpress
       - mariadb
     networks:
       - inception
     restart: always
 #
+
+mariadb
