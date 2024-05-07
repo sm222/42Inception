@@ -19,5 +19,3 @@ services:
       - inception
     restart: always
 #
-
-mariadb
