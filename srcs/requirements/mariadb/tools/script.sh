@@ -18,3 +18,5 @@ echo "FLUSH PRIVILEGES;" >> $OUTFILE
 mysql --user=mysql --bootstrap < $OUTFILE
 
 rm -f $OUTFILE
+
+exec mysqld_safe
