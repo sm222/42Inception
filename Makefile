@@ -40,7 +40,7 @@ nginx:
 	docker exec -it srcs-nginx-1 bash
 
 clean:
-	rm -rf $(WORDPRESS_DIR) $(MARIADB_DIR) $(VOLUME_DIR)
+	sudo rm -rf $(WORDPRESS_DIR) $(MARIADB_DIR) $(VOLUME_DIR)
 
 .PHONY: clean all
 

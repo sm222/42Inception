@@ -9,8 +9,8 @@ services:
     build:
       context: ./requirements/nginx
       dockerfile: Dockerfile
-    volume:
-      - worlpress:/var/www/html
+    volumes:
+      - wordpress:/var/www/html
     ports:
       - 443:443
     depends_on:
@@ -48,23 +48,23 @@ services:
     networks:
       - inception
     restart: always
-  
-  volume:
+
+volumes:
     mariadb:
       driver: local
       driver_opts:
         type: none
         o: bind
-        device: /home/anboisve/data/mariadb
+        device: /home/sm222/data/mariadb
   
     wordpress:
       driver: local
       driver_opts:
         type: none
         o: bind
-        device: /home/anboisve/data/worldpress
-  
-  networks:
+        device: /home/sm222/data/wordpress
+
+networks:
     inception:
       driver: bridge
 
