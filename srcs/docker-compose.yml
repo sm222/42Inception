@@ -62,7 +62,7 @@ services:
       driver_opts:
         type: none
         o: bind
-        device : /home/anboisve/data/worldpress
+        device: /home/anboisve/data/worldpress
   
   networks:
     inception:
