@@ -1,4 +1,4 @@
-FROM debian:oldoldstable
+FROM debian:bullseye
 
 RUN apt update -y && apt upgrade -y
 RUN apt install -y php-fpm wget php-mysql mariadb-client
