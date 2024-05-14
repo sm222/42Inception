@@ -42,5 +42,8 @@ nginx:
 clean:
 	sudo rm -rf $(WORDPRESS_DIR) $(MARIADB_DIR) $(VOLUME_DIR)
 
+fclean: clean
+	@./nuke.sh
+
 .PHONY: clean all
 
