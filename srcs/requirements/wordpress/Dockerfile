@@ -1,7 +1,7 @@
 FROM debian:oldstable
 
 RUN apt update -y && apt upgrade -y
-RUN apt install -y php-fpm wget php-mysqli mariadb-client php7.4
+RUN apt install -y php-fpm wget php-mysqli mariadb-client
 
 COPY conf/www.conf /etc/php/7.4/fpm/pool.d/
 

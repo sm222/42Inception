@@ -28,5 +28,3 @@ fi
 if [ -f /var/www/html/wp-config.php ]; then
   /usr/sbin/php-fpm7.4 -F
 fi
-
-/usr/sbin/php-fpm7.4 -F
