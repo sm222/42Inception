@@ -31,13 +31,13 @@ ps:
 	docker ps
 
 db:
-	docker exec -it srcs-mariadb-1 bash
+	docker exec -it mariadb bash
 
 wp:
-	docker exec -it srcs-wordpress-1 bash
+	docker exec -it wordpress bash
 
 nginx:
-	docker exec -it srcs-nginx-1 bash
+	docker exec -it nginx bash
 
 clean:
 	sudo rm -rf $(WORDPRESS_DIR) $(MARIADB_DIR) $(VOLUME_DIR)
